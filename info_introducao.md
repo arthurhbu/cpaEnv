@@ -1,0 +1,103 @@
+# INTRODUÇÃO
+
+A Lei 10.861, de 14 de abril de 2004 implantou o Sistema Nacional de Avaliação da Educação Superior (Sinaes), constituindo-se como instrumento para o planejamento da gestão e desenvolvimento da educação, em articulação com as diretrizes da Comissão Nacional da Educação Superior (Conaes). Segundo a legislação, a avaliação institucional está pautada em um sistema global e integrado constituído pela autoavaliação, avaliação externa e o Exame Nacional de Desempenho de Estudantes (Enade).
+
+A avaliação institucional, portanto, é uma exigência legal do Sinaes e retorno à sociedade sobre as instituições de ensino superior para a melhoria da qualidade do ensino e o cumprimento do papel científico e sociopolítico das universidades.
+
+No âmbito da Universidade Estadual de Maringá (UEM), para conduzir os trabalhos de autoavaliação, foi constituída a Comissão Própria de Avaliação (CPA), em 2005, com o objetivo de desenvolver sistematicamente avaliações internas de modo a ter consonância com os objetivos propostos pelo Sinaes e com o sistema de avaliação da educação superior que vem sendo proposto no Estado do Paraná por meio da Comissão Especial de Avaliação da Educação Superior do Sistema Estadual de Ensino do Paraná (CEA).
+
+Ao longo de sua existência, a CPA buscou sistematizar um processo contínuo de avaliação interna assegurado pela Proposta de Autoavaliação aprovada por meio da Resolução n.º 015/2006-COU.
+
+> No horizonte da Proposta de Avaliação Institucional da UEM está o propósito de tornar a prática da avaliação institucional, uma ação norteadora na tomada de decisões, gerando reflexão permanente das ações na Universidade. Pretende-se, assim, fortalecer as relações da Universidade com a sociedade civil, enfatizando que a tarefa da avaliação na UEM é de caráter globalizante e interativo (1º Relatório de Autoavaliação da UEM, p. 255).
+
+Nessa perspectiva, na UEM, a autoavaliação tem o propósito de se firmar como instrumento orientador das decisões e das principais ações da instituição.
+
+O programa/sistema de avaliação que a CPA adota é desenvovido pelo Núcleo de Processamento de Dados (NPD) da UEM. O instrumento de avaliação adotado no presente relatório incorpora questões recentes como o impacto do Covid/19 na rotina dos discentes, os efeitos do Ensino Remoto Emergencial e a adequação da instituição ao novo cenário que se configurou nos meses posteriores à pandemia. Os instrumentos adotados pela CPA estão em constante processo de revisão e reestruturação, para atender às mudanças do cenário local, regional e naciona, as mudanças dos cursos e a adaptação da própria instituição de ensino.
+
+Para a divulgação da avaliação discentes aos alunos, a CPA utilizou diversos meios, a rádio, a televisão, as páginas institucionais da UEM e o email institucional. Com o apoio da Diretoria de Assuntos Acadêmicos (DAA), no ano que o **Instrumento de Avaliação pelo Discente** foi aplicado considerando a realidade dos discentes de graduação.
+
+Neste relatório apresentamos, especificamente, os resultados da **Avaliação Discente do Curso de {{curso}}** relativos ao ano letivos de 2021.
+
+# METODOLOGIA
+
+A avaliação discente foi realizada utilizando recursos online, aplicando um instrumento dividido em 3 partes. Com os instrumentos de avaliação online, a CPA consegue avaliar as disciplinas cursadas e seus respectivos docentes. Os dados desta avaliação constituem a base para identificar as percepções dos discentes sobre a instituição, seu curso, as disciplinas de seu curso e sua participação em outras esferas da universidade.
+
+A avaliação é composta pelos indicadores, conforme aponta o Quadro 1.
+
+Quadro 1- Grupos de indicadores da Avaliação Institucional de Cursos
+
+| Partes | |
+|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| PARTE I - Avaliação discente geral                                         | 1. Informações sobre Saúde <br>2. Atendimento remoto aos alunos <br>3. Comunicação da UEM <br>4. O Instrumento de Avaliação |
+| PARTE II - Sobre as disciplinas e os docentes                              | 5. Disciplina/professor                                                                                                     |
+| PARTE III - Sobre o Estágio e sobre o Trabalho de Conclusão do Curso (TCC) | 6. O Estágio (diferenciar disciplina de estágio)<br>7. O TCC                                                                |
+
+
+Ressalta-se que em cada grupo, o discente dispõe de um campo aberto para comentar sobre os aspectos avaliados ou sobre questões que não tenham sido contempladas no instrumento de avaliação.
+
+# RESULTADOS
+
+Os resultados relativo às sete partes do Instrumento de Avaliação pelo Discente estão organizados da seguinte forma:
+
+-   percentual de respondentes em relação ao número de matriculados de acordo com os sete Centros de Ensino no ano de 2021;
+
+-   percentual da participação discente na avaliação de acordo com o curso em relação ao seu Centro;
+
+-   resultado da avaliação discente do curso em 2021, de acordo com os Grupos de indicadore;
+
+-   resultado de cada indicador no ano avaliado.
+
+## Resultados Gerais da Avaliação Discente do Curso de {{curso}} referentes ao ano letivo de 2021
+
+Na Tabela 1[^1] está sistematizado o percentual de respondentes em relação ao número de matriculados, de acordo com os sete Centros de Ensino da UEM no ano de 2021.
+
+Tabela 1- Participantes da avaliação discente, de acordo com os Centros de Ensino, 2021.
+
+| Sigla | Centro   | Resp. | Matr.   |  %   |
+ |------|:----:|:-----:|:---:|:---:| 
+| CCH| Centro de Ciências Humanas, Letras e Artes| 694| 1344| 60.32| 
+| CCE| Centro de Ciências Exatas| 162| 410| 33.78| 
+| CTC| Centro de Tecnologia| 2044| 3114| 52.56| 
+| CSA| Centro de Ciências Sociais Aplicadas| 1298| 2778| 67.17| 
+| CCS| Centro de Ciências da Saúde| 308| 1194| 32.94| 
+| CCB| Centro de Ciências Biológicas| 398| 622| 59.49| 
+| CCA| Centro de Ciências Agrárias| 170| 680| 24.23| 
+
+
+Resp.: Respondentes; Matr.: Matriculados
+
+De acordo com os dados da Tabela 1, verifica-se que no ano de 2021 a média dos alunos matriculados da UEM que responderam ao **Instrumento de Avaliação pelo Discente** foi de 50,03%.
+
+A Tabela 2 apresenta o número total de matrículas e o respectivo percentual de respondentes dos cursos que compõem o , dentre os quais o **Curso de {{curso}}**.
+
+Tabela 2- Participantes da avaliação discente do , de acordo com os respectivos cursos, 2021.
+
+| Curso |  Resp. |Matr.|   %   | 
+ |------|:-----:|:-----:|:---:| 
+ | Arquitetura e Urbanismo| 8| 215| 3.72| 
+| Ciência da Computação| 21| 216| 9.72| 
+| Design| 10| 125| 8.0| 
+| Engenharia Ambiental (CAU)| 5| 60| 8.33| 
+| Engenharia Civil| 77| 448| 17.19| 
+| Engenharia Civil (CAU)| 3| 151| 1.99| 
+| Engenharia Elétrica| 5| 202| 2.48| 
+| Engenharia Mecânica| 9| 196| 4.59| 
+| Engenharia Química| 20| 441| 4.54| 
+| Engenharia Têxtil| 1| 41| 2.44| 
+| Engenharia de Alimentos| 7| 143| 4.9| 
+| Engenharia de Alimentos (CAU)| 5| 71| 7.04| 
+| Engenharia de Produção| 21| 539| 3.9| 
+| Engenharia de Produção (CRG)| 4| 84| 4.76| 
+ 
+
+Resp.: Respondentes; Matr.: Matriculados.
+
+Na avaliação discente no ano de 2021, o índice de participação discente do **Curso de {{curso}}** foi de {{participacao_curso}}% dos alunos matriculados.
+
+[^1]: Os dados dessa e das demais tabelas apresentadas neste relatório têm como fonte as informações básicas das avaliações discentes de cada ano letivo no qual o instrumento foi aplicado pela CPA.
+
+## Resultados específicos da Avaliação Discente do Curso de {{curso}} referentes ao ano letivo de 2021
+
+
+Vejamos de forma detalhada os resultados obtidos analisando cada grupo de perguntas do curso avaliado. Para isso, iremos expor gráficos e tabelas para cada pergunta proposta. 
+ 
