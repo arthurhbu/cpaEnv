@@ -23,11 +23,11 @@ def firstStepApplication(collectionCurso: Collection, collectionCentroeCurso: Co
     #Inserir CSVs no banco de dados
     
     # CSVManagment.insertMainCSVtoDatabase(collectionCurso, csvFileName)
-    CSVManagment.insertCursoeCentroCSVtoDatabase(collectionCentroeCurso) 
-    CSVManagment.insertCentroDiretorCSVDatabase(collectionDiretoreCentro)  
+    # CSVManagment.insertCursoeCentroCSVtoDatabase(collectionCentroeCurso) 
+    # CSVManagment.insertCentroDiretorCSVDatabase(collectionDiretoreCentro)  
 
     #Gerar Gráfico, Tabela e Relatório
-    # gerarGrafTabRelatorioGPT(curso)
+    gerarGrafTabRelatorioGPT(curso)
 
 def preprocessing(database: Database, collectionCursoseCentros: Collection, ano: int, collectionCurso: Collection) -> None:
     """
@@ -80,7 +80,7 @@ def geraçãoDeRelatorio(collectionCurso: Collection, collectionCentroPorAno: Co
         centro = str(input('Digite o nome do centro que gostaria de criar os relatórios: '))    
         gerarRelatoriosPorCentro(collectionCurso, collectionCentroPorAno, collectionCursosPorCentro, 'introducao.md', 'conclusao.md', ano, centro)
     if escolha == 2:
-        curso == str(input('Digite o nome do curso que gostaria de gerar relatório: '))
+        curso = str(input('Digite o nome do curso que gostaria de gerar relatório: '))
         gerarUmRelatorio(collectionCurso, collectionCentroPorAno, collectionCursosPorCentro, 'introducao.md', 'conclusao.md', ano, curso)
     if escolha == 3:
         gerarTodosRelatorios(collectionCurso, collectionCentroPorAno, collectionCursosPorCentro, 'introducao.md', 'conclusao.md', ano)

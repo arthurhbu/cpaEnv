@@ -1,7 +1,7 @@
 from src.supportFunctions.dictToTwoLists import dictToList
 from src.generationFunctions.graph.graphGenerator import controllerGraphGenerator
 from src.generationFunctions.text.textFunctions import composeTable
-from src.openAI.openAIFunctions import *
+from src.gemma2.generationFunctions import createReport
 from src.generationFunctions.relatório.compor_partes_relatorio import *
 from src.generationFunctions.relatório.gerarRelatorio import gerarRelatorioPorCurso
 from pymongo.collection import Collection
@@ -15,29 +15,39 @@ def gerarGrafTabRelatorioGPT(collectionName: Collection) -> None:
     :param CollectionName: Paramêtro que chama a collection na qual estamos trabalhando
     :type CollectionName: Collection
     """
-    for document in collectionName.find({'relatorioGraficoGPT': {'$exists': False}}):
-        pergunta_formatada = re.sub(r"^\d+\.\d+-\s*",'',document["pergunta"])
+    # for document in collectionName.find({'relatorioGraficoGPT': {'$exists': False}}):
+    #     pergunta_formatada = re.sub(r"^\d+\.\d+-\s*",'',document["pergunta"])
+    #     sorted_pctOptDict = dict(sorted(document["pct_por_opcao"].items(), key=lambda x: x[1], reverse=True))
+    #     opcoes, pct = dictToList(sorted_pctOptDict)
+    #     path = controllerGraphGenerator(collectionName, opcoes, pct, document["codigo_curso"], document["cd_subgrupo"], document["nu_pergunta"], pergunta_formatada)
+    #     table = composeTable(pergunta_formatada, sorted_pctOptDict)
+    #     # reportGraph = createReport(pergunta_formatada, sorted_pctOptDict) Funçao obsoleta, trocar dps
+    #     # captionGraph = createCaption(pergunta_formatada) Função obsoleta, trocar dps
+
+    #     collectionName.update_one(
+    #         {
+    #             "codigo_curso": document["codigo_curso"],
+    #             "nu_pergunta": document["nu_pergunta"]
+    #         },
+    #         {
+    #             '$set': {
+    #                 'path': path
+    #                 # 'tabela': table,
+    #                 # 'relatorioGraficoGPT': reportGraph,
+    #                 # 'legendaGraficoGPT': captionGraph  
+    #             }
+    #         }
+    #     )
+    print('Esta função esta sendo lida')
+    for document in collectionName.find().limit(1):
+        print('entrou no for')
+        print(document['nm_curso'])
+        print(document['nm_pergunta'])
+        
+        pergunta_formatada = re.sub(r"^\d+\.\d+-\s*",'',document["nm_pergunta"])
         sorted_pctOptDict = dict(sorted(document["pct_por_opcao"].items(), key=lambda x: x[1], reverse=True))
         opcoes, pct = dictToList(sorted_pctOptDict)
-        path = controllerGraphGenerator(collectionName, opcoes, pct, document["codigo_curso"], document["cd_subgrupo"], document["nu_pergunta"], pergunta_formatada)
-        table = composeTable(pergunta_formatada, sorted_pctOptDict)
-        # reportGraph = createReport(pergunta_formatada, sorted_pctOptDict) Funçao obsoleta, trocar dps
-        # captionGraph = createCaption(pergunta_formatada) Função obsoleta, trocar dps
-
-        collectionName.update_one(
-            {
-                "codigo_curso": document["codigo_curso"],
-                "nu_pergunta": document["nu_pergunta"]
-            },
-            {
-                '$set': {
-                    'path': path
-                    # 'tabela': table,
-                    # 'relatorioGraficoGPT': reportGraph,
-                    # 'legendaGraficoGPT': captionGraph  
-                }
-            }
-        )
+        createReport(pergunta_formatada, sorted_pctOptDict)
 
         
 def gerarTodosRelatorios(collectionCurso: Collection, collectionCentroPorAno: Collection, collectionCursosPorCentro: Collection, arquivo_intro: str, arquivo_conclusao: str, ano: int) -> None:
