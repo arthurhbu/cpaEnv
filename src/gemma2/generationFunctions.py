@@ -1,6 +1,6 @@
-import ollama
 from src.generationFunctions.text.textFunctions import tableInterpretationTextGenerator
 import random as rand
+import ollama
 
 def createReport(pergunta, dictOptPct):
     """

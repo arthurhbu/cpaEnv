@@ -6,7 +6,7 @@ from src.supportFunctions.percentageUpdateBD import *
 
 class CSVManagment:
 
-    def maincsv_verifier(verifier: str, collectionName: Collection) -> bool:
+    def verifierMainCsv(verifier: str, collectionName: Collection) -> bool:
         """
         Função que verifica se os dados do CSV já foram inseridos no banco de dados
 
@@ -139,7 +139,7 @@ class CSVManagment:
             'respostas',
             'total_do_curso']
 
-        if CSVManagment.maincsv_verifier(df.iloc[0,0], collectionName) == True:
+        if CSVManagment.verifierMainCsv(df.iloc[0,0], collectionName) == True:
             return print("Os dados já foram inseridos no banco!")
 
         # Neste for estamos iterando o dataframe e coletando as informações para serem inseridas no banco de dados

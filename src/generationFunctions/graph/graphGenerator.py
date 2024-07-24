@@ -7,7 +7,7 @@ from PIL import Image
 from pymongo.collection import Collection
 
 
-def percentage_plot(pct: int, allvalues: list[float]) -> list[float]:
+def percentagePlot(pct: int, allvalues: list[float]) -> list[float]:
     """
     Função para plotar a porcentagem no gráfico de forma visual
 
@@ -51,7 +51,7 @@ def graphPlot(dirSaidaFig: Path, cod_curso: int, cod_subgrupo: int, options: lis
     fig, ax = plt.subplots(figsize=(13, 7))
 
     wedges, texts, autotexts = ax.pie(percentage,
-                                    autopct=lambda pct: percentage_plot(pct, percentage),
+                                    autopct=lambda pct: percentagePlot(pct, percentage),
                                     labels=options,
                                     shadow=True,
                                     startangle=90,

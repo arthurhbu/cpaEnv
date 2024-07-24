@@ -5,7 +5,7 @@ from database.connectionDB import connectToDatabase
 from src.csvManipulationFunctions.CSVManager import *
 from src.generationFunctions.mainGenerator import *
 from src.generationFunctions.relatório.gerarRelatorio import gerarRelatorioPorCurso
-from database.databaseQuerys import df_cursos_por_centro,df_centro_por_ano
+from database.databaseQuerys import dfCursosPorCentro,dfCentroPorAno
 
 
 def initializeBD(databaseName):
@@ -27,7 +27,7 @@ def firstStepApplication(collectionCurso: Collection, collectionCentroeCurso: Co
     # CSVManagment.insertCentroDiretorCSVDatabase(collectionDiretoreCentro)  
 
     #Gerar Gráfico, Tabela e Relatório
-    gerarGrafTabRelatorioGPT(curso)
+    gerarGrafTabRelatorioGPT(collectionCurso)
 
 def preprocessing(database: Database, collectionCursoseCentros: Collection, ano: int, collectionCurso: Collection) -> None:
     """
@@ -50,10 +50,10 @@ def preprocessing(database: Database, collectionCursoseCentros: Collection, ano:
     document_to_insert = []
 
     for centro in centros:
-        document_to_insert.extend(df_cursos_por_centro(collectionCursoseCentros, ano, centro))
+        document_to_insert.extend(dfCursosPorCentro(collectionCursoseCentros, ano, centro))
     database['cursos_por_centro'].insert_many(document_to_insert)
 
-    df_centro_por_ano(collectionCurso, database, ano)
+    dfCentroPorAno(collectionCurso, database, ano)
 
 
 def geraçãoDeRelatorio(collectionCurso: Collection, collectionCentroPorAno: Collection, collectionCursosPorCentro: Collection, ano: int) -> None:

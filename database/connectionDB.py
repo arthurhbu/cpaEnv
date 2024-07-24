@@ -1,7 +1,7 @@
 from pymongo import (
     MongoClient,
     errors)
-from database.python_mongoDB_dbconfig import read_db_config
+from database.pythonMongoConfig import read_db_config
 
 def connection(db_config):
     """

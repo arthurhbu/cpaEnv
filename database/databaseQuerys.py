@@ -1,4 +1,4 @@
-def df_cursos_por_centro(collectionCursoseCentros,ano,centro_de_ensino):
+def dfCursosPorCentro(collectionCursoseCentros,ano,centro_de_ensino):
 
     # Realizar a agregação de dados
     results = list(collectionCursoseCentros.aggregate([
@@ -62,7 +62,7 @@ def df_cursos_por_centro(collectionCursoseCentros,ano,centro_de_ensino):
 
     return results
 
-def df_centro_por_ano(collectionCurso,database, ano):
+def dfCentroPorAno(collectionCurso,database, ano):
     centro_por_ano_temp = database['centro_por_ano_temp']
 
     collectionCurso.aggregate([

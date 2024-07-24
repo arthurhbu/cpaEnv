@@ -2,7 +2,7 @@ from src.supportFunctions.dictToTwoLists import dictToList
 from src.generationFunctions.graph.graphGenerator import controllerGraphGenerator
 from src.generationFunctions.text.textFunctions import composeTable
 from src.gemma2.generationFunctions import createReport
-from src.generationFunctions.relatório.compor_partes_relatorio import *
+from src.generationFunctions.relatório.comporPartesRelatorio import *
 from src.generationFunctions.relatório.gerarRelatorio import gerarRelatorioPorCurso
 from pymongo.collection import Collection
 import sys
@@ -94,15 +94,15 @@ def gerarRelatoriosPorCentro(collectionCurso: Collection, collectionCentroPorAno
     :param centro_de_ensino: Centro de ensino escolhido para gerar os relatórios dos cursos pertencentes ao mesmo
     :type centro_de_ensino: String
     """
-    compor_introducao(collectionCentroPorAno, collectionCursosPorCentro, arquivo_intro, ano, centro_de_ensino)
-    compor_conclusão(collectionCursosPorCentro, arquivo_conclusao, ano)
+    comporIntroducao(collectionCentroPorAno, collectionCursosPorCentro, arquivo_intro, ano, centro_de_ensino)
+    comporConclusao(collectionCursosPorCentro, arquivo_conclusao, ano)
 
     cursos = collectionCurso.distinct('nome_do_curso', {'centro_de_ensino': centro_de_ensino})
     print(cursos)
     for curso in cursos:
         gerarRelatorioPorCurso(curso, collectionCurso, collectionCursosPorCentro)
         cursoArquivo = f'{curso}.md'
-        substituir_identificadores(cursoArquivo)
+        substituirIdentificadores(cursoArquivo)
         #oi
 
 

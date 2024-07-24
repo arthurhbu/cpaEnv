@@ -30,3 +30,6 @@ def upload_fileInfo():
 
         return jsonify({'message': 'File succsefully uploaded', 'file_path': file.filename, 'info': info}), 200
     
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+    

@@ -54,7 +54,8 @@ def gerarRelatorioPorCurso(curso_escolhido, collectionCurso, collectionCursosPor
         for document in collectionCurso.find({'nome_do_curso': curso_escolhido}):
             # if document['codigo_disciplina'] == '-':
             legenda_gpt = re.sub(r'\"','',document["legendaGraficoGPT"]).rstrip()
-            arquivo.write(f"![{legenda_gpt}]({f'{document['path']}.png'} '{legenda_gpt}')")
+            # arquivo.write(f"![{legenda_gpt}]({f'{document["path"]}.png'} '{legenda_gpt}')")
+            arquivo.write(f"![{legenda_gpt}]({document['path']}.png '{legenda_gpt}')")
             print('\n', file=arquivo)
             print(f"Tabela index_- {document['legendaGraficoGPT']} \n", file=arquivo)
             arquivo.write(document['tabela'])
